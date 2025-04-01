@@ -5,16 +5,16 @@
 // This file contains the JS functions for index.html
 
 //Functions that calculate input and give answers
-function perAnswer() {
-    let x = document.getElementById("PVS").value;
-    let y = document.getElementById("PHS").value;
-    a = 2*x + 2*y
-    document.getElementById("AnswerPeri").innerHTML = "Answer:" + a;
+function calcPerimeter() {
+    let length = document.getElementById("length-peri").value;
+    let width = document.getElementById("width-peri").value;
+    peri = 2*length + 2*width
+    document.getElementById("answer-peri").innerHTML = "Answer:" + peri;
 }
 
-function aAnswer() {
-    let z = document.getElementById("AVS").value;
-    let v = document.getElementById("AHS").value;
-    b = z*v
-    document.getElementById("AnswerArea").innerHTML = "Answer:" + b;
+function calcArea() {
+    let arealength = document.getElementById("length-area").value;
+    let areawidth = document.getElementById("width-area").value;
+    area = arealength*areawidth
+    document.getElementById("answer-area").innerHTML = "Answer:" + area;
 }
